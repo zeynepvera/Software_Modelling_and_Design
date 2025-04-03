@@ -2,23 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Question1UsingCompasition;
+package Week2.Ex1Before_LSP;
 
 /**
  *
  * @author WINCHESTER
  */
 public class Vehicle {
-    
-    IColor colorSetter; //reference
-    public Vehicle(IColor colorSetter){
-        this.colorSetter=colorSetter;
-        
+     protected int speed;
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
-    
-    void displayColor(){
-        colorSetter.setColor();
+
+    public int getSpeed() {
+        return speed;
     }
-    
     
 }
